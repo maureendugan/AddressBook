@@ -29,8 +29,13 @@ $(document).ready(function() {
       $("input#edit-last-name").val(newContact.lastName);
       $("input#edit-address").val(newContact.address);
 
-      // $("#edit-contact").submit(function(event) {
-      // }
+      $("#edit-contact").submit(function(event) {
+        newContact.firstName = $("input#edit-first-name").val();
+        $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
+      event.preventDefault();
+      });
+
+
       });
     this.reset();
 
