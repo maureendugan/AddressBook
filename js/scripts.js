@@ -21,19 +21,21 @@ $(document).ready(function() {
 
     $(".contact").last().click(function() {
       $("#show-contact").show();
-
       $("#show-contact h2").text(newContact.fullName());
       $(".first-name").text(newContact.firstName);
       $(".last-name").text(newContact.lastName);
       $(".address").text(newContact.address);
-    })
+      $("input#edit-first-name").val(newContact.firstName);
+      $("input#edit-last-name").val(newContact.lastName);
+      $("input#edit-address").val(newContact.address);
 
+      // $("#edit-contact").submit(function(event) {
+      // }
+      });
     this.reset();
 
-
-
-  })
-})
+  });
+});
 
 
 

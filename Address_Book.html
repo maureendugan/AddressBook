@@ -35,13 +35,25 @@
           <ul id="contacts">
           </ul>
         </div> <!--1st col-sm-6 Column -->
-          <div class="col-sm-6">
-            <div id="show-contact">
-              <h2></h2>
-              <p>First name: <span class="first-name"></span></p>
-              <p>Last name: <span class="last-name"></span></p>
-              <p>Address: <span class="address"></span></p>
-          </div> <!--Show Contact -->
+        <div class="col-sm-6">
+            <form id="edit-contact">
+              <h2>Edit Contact:</h2>
+                <div class="form-group">
+                  <label for="edit-first-name">First Name</label>
+                  <input id="edit-first-name" type="text" class="form-control" value = "">
+                </div>
+                 <div class="form-group">
+                  <label for="edit-last-name">Last Name</label>
+                  <input id="edit-last-name" type="text" class="form-control">
+                </div>
+                 <div class="form-group">
+                  <label for="edit-address">Address</label>
+                  <input id="edit-address" type="text" class="form-control">
+                </div>
+
+                <button type="submit" class="btn">Edit</button>
+              </form>
+            </div><!--Show Contact col-sm-6 Column -->
         </div> <!--2nd col-sm-6 Column -->
       </div> <!--row -->
     </div> <!--container -->
